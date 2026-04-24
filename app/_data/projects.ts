@@ -29,7 +29,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "dangote-cement-northern-distribution",
+    slug: "ioc-facilities-oil-containment-treatment-and-Transportation",
     title: "Sosasa Logistics Nig Ltd Provides Oil Containment, Transportation, Treatment and Disposal Services for IOC Facilities",
     client: "IOC Facilities",
     category: "Oil Containment & Transportation",
