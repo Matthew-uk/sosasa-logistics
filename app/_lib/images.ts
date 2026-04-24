@@ -27,6 +27,8 @@ export const IMG = {
   control: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
   rack: "https://images.unsplash.com/photo-1601599963565-b7f49deef519?auto=format&fit=crop&w=800&q=80",
   workers: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80",
+  odiopiti_project: ["/odiopiti/odiopiti-1.jpeg","/odiopiti/odiopiti-2.jpeg","/odiopiti/odiopiti-3.jpeg","/odiopiti/odiopiti-4.jpeg","/odiopiti/odiopiti-5.jpeg","/odiopiti/odiopiti-6.jpeg","/odiopiti/odiopiti-7.jpeg","/odiopiti/odiopiti-8.jpeg","/odiopiti/odiopiti-9.jpeg","/odiopiti/odiopiti-10.jpeg","/odiopiti/odiopiti-11.jpeg","/odiopiti/odiopiti-12.jpeg","/odiopiti/odiopiti-13.jpeg","/odiopiti/odiopiti-14.jpeg","/odiopiti/odiopiti-15.jpeg","/odiopiti/odiopiti-16.jpeg","/odiopiti/odiopiti-17.jpeg","/odiopiti/odiopiti-18.jpeg","/odiopiti/odiopiti-19.jpeg"],
+  containment_project: ["/containment/containment-1.jpeg","/containment/containment-2.jpeg","/containment/containment-3.jpeg","/containment/containment-4.jpeg","/containment/containment-5.jpeg","/containment/containment-6.jpeg","/containment/containment-7.jpeg","/containment/containment-8.jpeg","/containment/containment-9.jpeg","/containment/containment-10.jpeg","/containment/containment-11.jpeg","/containment/containment-12.jpeg","/containment/containment-13.jpeg","/containment/containment-14.jpeg","/containment/containment-15.jpeg","/containment/containment-16.jpeg","/containment/containment-17.jpeg","/containment/containment-18.jpeg","/containment/containment-19.jpeg"]
 };
 
 export type ImgKey = keyof typeof IMG;

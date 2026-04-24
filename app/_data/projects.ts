@@ -3,22 +3,22 @@ import type { Project } from "../_lib/types";
 
 export const projects: Project[] = [
   {
-    slug: "agip-industrial-waste-transport",
-    title: "Agip Industrial Waste Transport",
-    client: "Nigerian Agip Oil Company",
-    category: "Hazardous Materials",
-    location: "Port Harcourt → Eleme",
+    slug: "ube-school-infrastructure-odiopiti-rivers-state",
+    title: "Sosasa Logistics Nig Ltd Undertakes Major School Infrastructure Project",
+    client: "UBE Board Rivers State",
+    category: "Construction",
+    location: "Odiopiti Town, Ahoada West",
     year: "2025",
     completionDate: "August 2025",
     shortDesc:
-      "Transported 1,000L of certified industrial waste from Agip's refinery to an accredited disposal facility under full regulatory compliance.",
+      "Sosasa Logistics Nig Ltd has embarked on a significant educational infrastructure project in Odiopiti Town, Ahoada West Local Government Area of Rivers State, under the Universal Basic Education (UBE) Board. The project is aimed at improving learning conditions and expanding access to quality education in the community.",
     fullDesc: [
-      "SOSASA was contracted to handle the safe transfer of 1,000L of classified industrial waste from Agip's Port Harcourt operations to a certified disposal facility in Eleme.",
-      "The engagement required full NUPRC and NESREA compliance, tamper-evident containerisation, GPS-tracked movement, and chain-of-custody documentation at every handoff.",
-      "Our dedicated HAZMAT-certified team executed the transfer across a 72-hour window with zero incidents, zero leakage, and a complete audit trail delivered to the client within 24 hours of arrival.",
+      "Sosasa Logistics Nig Ltd has embarked on a significant educational infrastructure project in Odiopiti Town, Ahoada West Local Government Area of Rivers State, under the Universal Basic Education (UBE) Board. The project is aimed at improving learning conditions and expanding access to quality education in the community.",
+      "The scope of work includes the construction of a six-classroom block, designed to accommodate a growing number of pupils and provide a more conducive learning environment. In addition, the project features a dedicated headmaster’s office to enhance school administration and support effective management of academic activities.",
+      "Furthermore, the development includes a water project to provide clean and reliable water supply within the school premises, as well as land reclamation works to stabilize and prepare the site for long-term use. This holistic approach ensures that both educational and environmental needs of the school community are addressed.",
     ],
-    heroImage: IMG.containers,
-    gallery: [IMG.containers, IMG.port, IMG.truck, IMG.crane, IMG.loadingBay, IMG.driver],
+    heroImage: IMG.odiopiti_project[10],
+    gallery: IMG.odiopiti_project,
     stats: [
       { label: "Volume", value: "1,000L" },
       { label: "Distance", value: "48 km" },
@@ -30,9 +30,9 @@ export const projects: Project[] = [
   },
   {
     slug: "dangote-cement-northern-distribution",
-    title: "Dangote Cement — Northern Distribution",
-    client: "Dangote Cement PLC",
-    category: "Bulk Freight",
+    title: "Sosasa Logistics Nig Ltd Provides Oil Containment, Transportation, Treatment and Disposal Services for IOC Facilities",
+    client: "IOC Facilities",
+    category: "Oil Containment & Transportation",
     location: "Obajana → Kano, Kaduna, Sokoto",
     year: "2025",
     completionDate: "Ongoing",
@@ -43,8 +43,8 @@ export const projects: Project[] = [
       "We deployed 12 dedicated 30-ton haulage units with backup vehicles staged at Lokoja and Kaduna to absorb any road delays. Every drop was confirmed with photo proof-of-delivery and signed manifests.",
       "The engagement continues as a rolling contract, with SOSASA maintaining 98.7% on-time delivery across all northern dealer hubs.",
     ],
-    heroImage: IMG.truck,
-    gallery: [IMG.truck, IMG.trucks, IMG.highway, IMG.cargo, IMG.workers, IMG.warehouse],
+    heroImage: IMG.containment_project[8],
+    gallery: IMG.containment_project,
     stats: [
       { label: "Tonnage", value: "500t" },
       { label: "Routes", value: "4" },

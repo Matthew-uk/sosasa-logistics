@@ -17,6 +17,8 @@ const LINKS: NavLink[] = [
   { href: "/contact", label: "Contact" },
 ];
 
+const ADMIN_HREF = "/admin/dashboard";
+
 function isActive(href: string, pathname: string) {
   if (href === "/") return pathname === "/";
   return pathname === href || pathname.startsWith(href + "/");
@@ -73,6 +75,9 @@ export default function Navbar() {
             })}
             <Link href="/contact" className="btn-p" style={{ padding: "10px 26px", fontSize: 13, marginLeft: 12 }}>
               Get a Quote <ArrowRight size={14} />
+            </Link>
+            <Link href={ADMIN_HREF} style={{ padding: "9px 18px", borderRadius: 10, fontFamily: "'Lexend'", fontSize: 12, fontWeight: 600, color: C.gray400, background: `${C.navy700}`, border: `1px solid ${C.navy600}`, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, marginLeft: 4, transition: "all .3s" }}>
+              Admin
             </Link>
           </div>
 
