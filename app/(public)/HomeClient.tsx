@@ -34,33 +34,33 @@ export default function HomeClient() {
           <div style={{ animation: "slideL .9s ease .1s both" }}>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: `${C.orange500}10`, border: `1px solid ${C.orange500}22`, padding: "8px 20px", borderRadius: 100, marginBottom: 32 }}>
               <Sparkles size={14} color={C.orange400} />
-              <span style={{ fontFamily: "'Lexend'", fontSize: 12, fontWeight: 700, color: C.orange300, letterSpacing: ".04em" }}>Nigeria&apos;s #1 Logistics Partner</span>
+              <span style={{ fontFamily: "'Lexend'", fontSize: 12, fontWeight: 700, color: C.orange300, letterSpacing: ".04em" }}>100% Indigenous Nigerian Enterprise — RC 7126319</span>
             </div>
 
             <h1 style={{ fontFamily: "'Bebas Neue'", fontSize: "clamp(52px, 7vw, 96px)", color: C.white, lineHeight: .95, letterSpacing: ".01em", marginBottom: 28 }}>
-              We Move
+              On Line.
               <br />
-              <span className="tg">Nigeria</span>
+              On Time.
               <br />
-              Forward
+              <span className="tg">On The Money.</span>
             </h1>
 
             <p style={{ fontSize: 17, color: C.gray300, lineHeight: 1.8, maxWidth: 500, marginBottom: 44 }}>
-              From Lagos to Abuja, Port Harcourt and beyond — blazing-fast delivery, real-time tracking, and insured shipping for businesses that refuse to slow down.
+              SOSASA Logistics Services Ltd is an entirely indigenous Nigerian enterprise delivering environmental logistics, petroleum services, construction haulage, and agro-allied solutions — with an unwavering commitment to safety and quality.
             </p>
 
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 56 }}>
               <Link href="/contact" className="btn-p" style={{ padding: "18px 40px", fontSize: 16 }}>
-                Ship Now <ArrowRight size={18} />
+                Request a Quote <ArrowRight size={18} />
               </Link>
-              <Link href="/track" className="btn-o" style={{ padding: "16px 34px", fontSize: 16 }}>
-                <Package size={18} /> Track Package
+              <Link href="/services" className="btn-o" style={{ padding: "16px 34px", fontSize: 16 }}>
+                <Package size={18} /> Our Services
               </Link>
             </div>
 
             <div style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
               {([
-                [Shield, "Fully Insured"], [Clock, "Same-Day Available"], [Headphones, "24/7 Support"],
+                [Shield, "Safety First"], [Clock, "On-Time Delivery"], [Headphones, "24/7 Support"],
               ] as const).map(([Icon, text], i) => (
                 <div key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   <Icon size={15} color={C.orange400} />
@@ -102,10 +102,10 @@ export default function HomeClient() {
               </div>
 
               {([
-                { val: "99.8%", label: "Delivery Rate", icon: TrendingUp, color: "#4ade80" },
-                { val: "4h 23m", label: "Avg. Transit", icon: Timer, color: C.orange400 },
-                { val: "2,500+", label: "Active Clients", icon: Users, color: "#60a5fa" },
-                { val: "50K+", label: "Packages/Mo", icon: Package, color: C.orange300 },
+                { val: "100%", label: "Indigenous Nigerian", icon: TrendingUp, color: "#4ade80" },
+                { val: "6+", label: "Service Lines", icon: Timer, color: C.orange400 },
+                { val: "Multi-Sector", label: "Oil, Gas & Construction", icon: Users, color: "#60a5fa" },
+                { val: "Nationwide", label: "Onshore & Offshore", icon: Package, color: C.orange300 },
               ]).map((s, i) => (
                 <div key={i} style={{
                   background: C.navy800, border: `1px solid ${C.navy600}`,
@@ -131,10 +131,10 @@ export default function HomeClient() {
       <Section bg={C.navy900} style={{ padding: "70px 28px" }}>
         <div className="anim stats-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 20, background: `linear-gradient(135deg, ${C.navy800}, ${C.navy850})`, border: `1px solid ${C.navy600}`, borderRadius: 24, padding: 28 }}>
           {([
-            { icon: Package, value: 50000, suffix: "+", label: "Packages Delivered" },
-            { icon: MapPin, value: 36, suffix: "", label: "States Covered" },
-            { icon: Users, value: 2500, suffix: "+", label: "Happy Clients" },
-            { icon: Clock, value: 99, suffix: "%", label: "On-Time Rate" },
+            { icon: Package, value: 6, suffix: "+", label: "Core Service Lines" },
+            { icon: MapPin, value: 36, suffix: "+", label: "States & FCT Coverage" },
+            { icon: Users, value: 10, suffix: "+", label: "Objective Business Areas" },
+            { icon: Clock, value: 100, suffix: "%", label: "Indigenous Nigerian" },
           ] as StatItem[]).map((s, i) => (
             <div key={i} style={{ textAlign: "center", padding: "20px 8px" }}>
               <s.icon size={22} color={C.orange400} style={{ marginBottom: 12 }} />
@@ -150,12 +150,12 @@ export default function HomeClient() {
 
       {/* ═══ SERVICES ═══ */}
       <Section bg={C.navy950}>
-        <Heading label="Our Services" title={<>WHAT WE <span className="tg">DELIVER</span></>} subtitle="Fast, reliable, and secure logistics solutions tailored for businesses across Nigeria." />
+        <Heading label="Our Services" title={<>WHAT WE <span className="tg">DELIVER</span></>} subtitle="From environmental control and oil spillage clean-up to construction haulage and agro-allied logistics — we provide essential services across Nigeria's critical sectors." />
         <div className="services-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
           {([
-            { icon: Zap, title: "Same-Day Express", desc: "Lightning delivery within Lagos, Abuja, and Port Harcourt. Order by noon, receive by evening.", img: IMG.delivery },
-            { icon: Truck, title: "Interstate Logistics", desc: "Door-to-door delivery connecting major cities with real-time tracking and guaranteed timelines.", img: IMG.truck },
-            { icon: Shield, title: "Insured Shipping", desc: "Every package fully insured from pickup to delivery. Ship with confidence and total peace of mind.", img: IMG.packages },
+            { icon: Zap, title: "Environmental Logistics", desc: "Waste disposal, fumigation, pollution control, oil spillage clean-up, land reclamation, and shore protection services.", img: IMG.delivery },
+            { icon: Truck, title: "Petroleum Logistics", desc: "Onshore and offshore oil and gas services, petroleum product distribution, oilfield services, and industrial chemical supply.", img: IMG.truck },
+            { icon: Shield, title: "Construction & Haulage", desc: "Heavy-duty haulage, dredging, civil works, road rehabilitation, pipeline welding, and quality building materials supply.", img: IMG.packages },
           ]).map((s, i) => (
             <div key={i} className="anim hlift" style={{ background: C.navy800, border: `1px solid ${C.navy600}`, borderRadius: 22, overflow: "hidden", cursor: "default" }}>
               <div style={{ height: 200, position: "relative", overflow: "hidden" }}>
@@ -211,7 +211,7 @@ export default function HomeClient() {
 
       {/* ═══ GALLERY ═══ */}
       <Section bg={C.navy950}>
-        <Heading label="Gallery" title={<>INSIDE <span className="tg">SOSASA</span> OPERATIONS</>} subtitle="A glimpse into our nationwide logistics infrastructure powering deliveries across Nigeria." />
+        <Heading label="Gallery" title={<>INSIDE <span className="tg">SOSASA</span> OPERATIONS</>} subtitle="A glimpse into our project execution, site operations, and logistics infrastructure across Nigeria." />
         <ArtGallery />
         <div className="anim" style={{ textAlign: "center", marginTop: 52 }}>
           <Link href="/gallery" className="btn-o">
@@ -222,7 +222,7 @@ export default function HomeClient() {
 
       {/* ═══ TESTIMONIALS ═══ */}
       <Section bg={C.navy900}>
-        <Heading label="Testimonials" title={<>TRUSTED BY <span className="tg">BUSINESSES</span> ACROSS NIGERIA</>} />
+        <Heading label="Testimonials" title={<>TRUSTED BY <span className="tg">CLIENTS</span> ACROSS NIGERIA</>} />
         <div className="testi-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
           {testimonials.map((t, i) => (
             <div key={i} className="anim hlift" style={{ background: C.navy800, border: `1px solid ${C.navy600}`, borderRadius: 22, overflow: "hidden" }}>
@@ -259,11 +259,11 @@ export default function HomeClient() {
           <div style={{ position: "absolute", inset: 0, background: `linear-gradient(135deg, ${C.orange600}ee, ${C.orange500}dd)` }} />
           <div style={{ position: "absolute", inset: 0, opacity: .06, backgroundImage: `radial-gradient(${C.white} 1px, transparent 1px)`, backgroundSize: "24px 24px" }} />
           <div style={{ position: "relative", zIndex: 2, padding: "80px 52px", textAlign: "center" }}>
-            <h2 style={{ fontFamily: "'Bebas Neue'", fontSize: "clamp(36px, 5vw, 56px)", color: C.white, lineHeight: 1.05, marginBottom: 18, letterSpacing: ".02em" }}>READY TO SHIP SMARTER?</h2>
-            <p style={{ fontSize: 17, color: "rgba(255,255,255,.85)", maxWidth: 520, margin: "0 auto 40px", lineHeight: 1.75 }}>Join 2,500+ businesses that trust SOSASA for their logistics needs across Nigeria.</p>
+            <h2 style={{ fontFamily: "'Bebas Neue'", fontSize: "clamp(36px, 5vw, 56px)", color: C.white, lineHeight: 1.05, marginBottom: 18, letterSpacing: ".02em" }}>READY TO WORK WITH SOSASA?</h2>
+            <p style={{ fontSize: 17, color: "rgba(255,255,255,.85)", maxWidth: 560, margin: "0 auto 40px", lineHeight: 1.75 }}>Partner with an entirely indigenous Nigerian enterprise committed to delivering on line, on time, and on the money — every time.</p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/contact" style={{ background: C.white, color: C.orange600, padding: "18px 40px", borderRadius: 14, fontFamily: "'Lexend'", fontWeight: 800, fontSize: 16, cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 10, transition: "all .3s", textDecoration: "none" }}>
-                Get a Free Quote <ArrowRight size={18} />
+                Request a Quote <ArrowRight size={18} />
               </Link>
               <a href="tel:+2348000000000" style={{ background: "rgba(255,255,255,.15)", color: C.white, border: "2px solid rgba(255,255,255,.3)", padding: "16px 34px", borderRadius: 14, fontFamily: "'Lexend'", fontWeight: 700, fontSize: 16, cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 10, backdropFilter: "blur(8px)", textDecoration: "none" }}>
                 <Phone size={18} /> Call Us Now

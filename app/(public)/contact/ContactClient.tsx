@@ -11,10 +11,13 @@ import { IMG } from "../../_lib/images";
 import { C } from "../../_lib/tokens";
 
 const SERVICES = [
-  { value: "Same-Day Express", label: "Same-Day Express" },
-  { value: "Interstate Logistics", label: "Interstate Logistics" },
-  { value: "Business Solutions", label: "Business Solutions" },
-  { value: "Custom Quote", label: "Custom Quote" },
+  { value: "Environmental Logistics", label: "Environmental Logistics" },
+  { value: "Petroleum Logistics", label: "Petroleum Logistics" },
+  { value: "Construction & Haulage", label: "Construction & Haulage" },
+  { value: "Poultry & Agro-Allied Logistics", label: "Poultry & Agro-Allied Logistics" },
+  { value: "General Contracts & Supply", label: "General Contracts & Supply" },
+  { value: "Water Production & Packaging", label: "Water Production & Packaging" },
+  { value: "Custom Quote", label: "Custom Quote / Other" },
 ];
 
 const schema = z.object({
@@ -45,8 +48,8 @@ export default function ContactClient() {
     <div style={{ animation: "fadeIn .5s" }}>
       <SubPageHero
         label="Contact Us"
-        title={<>LET&apos;S <span className="tg">TALK</span> LOGISTICS</>}
-        subtitle="Have a question, need a quote, or ready to get started? We're here to help."
+        title={<>LET&apos;S <span className="tg">WORK</span> TOGETHER</>}
+        subtitle="Have a project to discuss, need a service quote, or looking to partner with an entirely indigenous Nigerian enterprise? We're ready to deliver."
         image={IMG.cityNight}
       />
 
@@ -61,10 +64,10 @@ export default function ContactClient() {
             </div>
             <div style={{ background: C.navy800, border: `1px solid ${C.navy600}`, borderRadius: 24, padding: 36, display: "flex", flexDirection: "column", gap: 28 }}>
               {([
-                { icon: Phone, label: "Phone", value: "+234 (0) 800 SOSASA", sub: "24/7" },
-                { icon: Mail, label: "Email", value: "hello@sosasa.ng", sub: "2hr response" },
-                { icon: MapPin, label: "Head Office", value: "Victoria Island, Lagos", sub: "Nigeria" },
-                { icon: Clock, label: "Hours", value: "24/7 Operations", sub: "Including holidays" },
+                { icon: Phone, label: "Phone", value: "+234 (0) 800 SOSASA", sub: "Business hours & emergencies" },
+                { icon: Mail, label: "Email", value: "info@sosasalogistics.com", sub: "Project & service enquiries" },
+                { icon: MapPin, label: "Head Office", value: "Nigeria", sub: "Nationwide operations" },
+                { icon: Clock, label: "Operations", value: "Onshore & Offshore", sub: "24/7 project support" },
               ] as const).map((c, i) => (
                 <div key={i} style={{ display: "flex", gap: 16, alignItems: "flex-start" }}>
                   <div style={{ width: 48, height: 48, borderRadius: 14, background: `${C.orange500}10`, border: `1px solid ${C.orange500}1A`, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
@@ -88,7 +91,7 @@ export default function ContactClient() {
                     <CheckCircle size={36} color="#4ade80" />
                   </div>
                   <h3 style={{ fontFamily: "'Bebas Neue'", fontSize: 32, color: C.white, marginBottom: 12 }}>MESSAGE SENT!</h3>
-                  <p style={{ color: C.gray400, fontSize: 15 }}>We&apos;ll get back to you within 2 hours.</p>
+                  <p style={{ color: C.gray400, fontSize: 15 }}>Thank you for reaching out. Our team will be in touch with you shortly.</p>
                 </div>
               ) : (
                 <>
@@ -138,7 +141,7 @@ export default function ContactClient() {
                     <div>
                       <label style={{ fontSize: 12, color: C.gray400, marginBottom: 8, display: "block", fontWeight: 600, letterSpacing: ".04em" }}>Message</label>
                       <textarea
-                        placeholder="Tell us about your logistics needs..."
+                        placeholder="Tell us about your project or service requirements..."
                         rows={4}
                         style={inp}
                         {...register("message")}

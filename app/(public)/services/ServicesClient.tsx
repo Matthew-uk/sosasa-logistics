@@ -1,5 +1,5 @@
 "use client";
-import { ArrowRight, CheckCircle, PackageCheck, Shield, Truck, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle, Droplets, Flame, Leaf, Package, Tractor, Truck } from "lucide-react";
 import Link from "next/link";
 import Heading from "../../_components/Heading";
 import Section from "../../_components/Section";
@@ -9,10 +9,49 @@ import { C } from "../../_lib/tokens";
 import type { ServiceItem } from "../../_lib/types";
 
 const services: (ServiceItem & { img: string })[] = [
-  { icon: Zap, title: "Same-Day Express Delivery", desc: "Need it there today? Our express service operates within Lagos, Abuja, and Port Harcourt. Orders placed before noon arrive by 6 PM.", features: ["Within-city delivery", "2-6 hour turnaround", "Live GPS tracking", "Photo proof"], accent: true, img: IMG.delivery },
-  { icon: Truck, title: "Interstate Logistics", desc: "Seamless door-to-door delivery between Nigeria's major cities. Daily departures covering the Lagos-Abuja-Port Harcourt triangle.", features: ["Daily routes", "24-48 hour delivery", "Full insurance", "Bulk discounts"], img: IMG.truck },
-  { icon: PackageCheck, title: "Business Solutions", desc: "Custom logistics solutions for e-commerce brands, retailers, and enterprises. We become an extension of your team.", features: ["Account manager", "API integration", "Custom SLAs", "Monthly reporting"], img: IMG.warehouse },
-  { icon: Shield, title: "Secure Insured Shipping", desc: "Every package is fully insured. For high-value items, we offer enhanced security with dedicated handling and chain of custody.", features: ["Full value insurance", "Tamper-evident packing", "Custody tracking", "48hr claims"], img: IMG.packages },
+  {
+    icon: Leaf,
+    title: "Environmental Logistics",
+    desc: "Comprehensive environmental control and logistics services covering waste disposal, fumigation, water treatment, pest control, and oil spillage clean-up. We also carry out land reclamation, bush clearing, sand filling, shore protection, and pollution control operations.",
+    features: ["Waste disposal & control", "Oil spillage clean-up", "Fumigation & pest control", "Land reclamation & sand filling", "Shore protection", "Pollution control"],
+    accent: true,
+    img: IMG.delivery,
+  },
+  {
+    icon: Flame,
+    title: "Petroleum Logistics",
+    desc: "Full-spectrum oil and gas logistics and services — both onshore and offshore. We supply, distribute, and render marketable services for all petroleum products including natural gas, petrol, diesel, kerosene, lubricating oil, and industrial chemicals.",
+    features: ["Onshore & offshore services", "Petroleum product distribution", "Oil tools & oilfield services", "Industrial chemicals supply", "Gas distribution", "Marketable services"],
+    img: IMG.truck,
+  },
+  {
+    icon: Tractor,
+    title: "Poultry & Agro-Allied Logistics",
+    desc: "End-to-end logistics for the agricultural sector — from poultry and fish farming to fresh farm products and feed production. We handle large-scale and small-scale breeding, merchandise farming, aquatic farming, and general farming services.",
+    features: ["Poultry & fish farm logistics", "Fresh farm product transport", "Feed production & sale", "Large & small scale farming", "Aquatic farming support", "Merchandise farming"],
+    img: IMG.warehouse,
+  },
+  {
+    icon: Truck,
+    title: "Construction Logistics & Haulage",
+    desc: "Heavy-duty logistics, haulage, and engineering services for construction projects nationwide. We handle dredging, civil works, pipeline welding, road rehabilitation, structural steel works, and supply of quality building materials.",
+    features: ["Heavy duty haulage", "Dredging & civil works", "Pipeline welding", "Road rehabilitation", "Structural steel & metal works", "Building materials supply"],
+    img: IMG.packages,
+  },
+  {
+    icon: Package,
+    title: "General Contracts & Supply",
+    desc: "General contracting, procurement, import/export, and supply chain services across multiple sectors. We handle oilfield equipment, tug boats, barges, safety gadgets, office equipment, furniture, warehousing, and allied trading and marketing.",
+    features: ["General contracts & procurement", "Import/export services", "Oilfield equipment supply", "Tug boats & barges", "Warehousing & storage", "Safety gadgets supply"],
+    img: IMG.containers,
+  },
+  {
+    icon: Droplets,
+    title: "Water Production & Packaging",
+    desc: "Manufacturing, bottling, and distribution of portable water in all its forms — table water, pure water, mineral water, soda water, natural spring water, and other aerated or non-aerated bottled water products.",
+    features: ["Portable water manufacturing", "Bottling & canning", "Mineral & table water", "Natural spring water", "Pure water production", "Dealers & suppliers"],
+    img: IMG.delivery,
+  },
 ];
 
 export default function ServicesClient() {
@@ -20,8 +59,8 @@ export default function ServicesClient() {
     <div style={{ animation: "fadeIn .5s" }}>
       <SubPageHero
         label="Our Services"
-        title={<>LOGISTICS SOLUTIONS <span className="tg">THAT DELIVER</span></>}
-        subtitle="Whether it's a single package or a thousand, we have the infrastructure and expertise to move it."
+        title={<>ESSENTIAL SERVICES <span className="tg">ACROSS SECTORS</span></>}
+        subtitle="From environmental logistics and petroleum services to construction haulage and agro-allied solutions — SOSASA delivers with precision and professionalism."
         image={IMG.truck}
       />
 
@@ -31,7 +70,15 @@ export default function ServicesClient() {
             <div
               key={i}
               className={`anim hlift service-row ${i % 2 ? "rtl" : "ltr"}`}
-              style={{ display: "grid", gridTemplateColumns: "1fr 1fr", background: C.navy800, border: `1px solid ${s.accent ? C.orange500 + "33" : C.navy600}`, borderRadius: 24, overflow: "hidden", direction: i % 2 ? "rtl" : "ltr" }}
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                background: C.navy800,
+                border: `1px solid ${s.accent ? C.orange500 + "33" : C.navy600}`,
+                borderRadius: 24,
+                overflow: "hidden",
+                direction: i % 2 ? "rtl" : "ltr",
+              }}
             >
               <div style={{ padding: 48, direction: "ltr" }}>
                 <div style={{ width: 56, height: 56, borderRadius: 16, background: s.accent ? `${C.orange500}22` : `${C.orange500}10`, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 24, border: `1px solid ${C.orange500}${s.accent ? "44" : "1A"}` }}>
@@ -62,11 +109,11 @@ export default function ServicesClient() {
       <Section bg={C.navy850}>
         <div className="anim" style={{ textAlign: "center" }}>
           <h2 style={{ fontFamily: "'Bebas Neue'", fontSize: "clamp(32px, 4vw, 48px)", color: C.white, marginBottom: 16, letterSpacing: ".02em" }}>NEED A CUSTOM SOLUTION?</h2>
-          <p style={{ fontSize: 16, color: C.gray400, maxWidth: 500, margin: "0 auto 40px", lineHeight: 1.75 }}>
-            Every business is unique. Let&apos;s design a logistics plan tailored to your needs.
+          <p style={{ fontSize: 16, color: C.gray400, maxWidth: 520, margin: "0 auto 40px", lineHeight: 1.75 }}>
+            Every project is unique. Let&apos;s design a service plan tailored precisely to your operational needs.
           </p>
           <Link href="/contact" className="btn-p" style={{ padding: "18px 44px", fontSize: 16 }}>
-            Request Custom Quote <ArrowRight size={18} />
+            Request a Quote <ArrowRight size={18} />
           </Link>
         </div>
       </Section>

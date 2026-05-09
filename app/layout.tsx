@@ -8,18 +8,19 @@ const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
   title: {
-    default: "SOSASA Logistics — Nigeria's #1 Logistics Partner",
-    template: "%s | SOSASA Logistics",
+    default: "SOSASA Logistics Services Ltd — Indigenous Nigerian Logistics & Engineering",
+    template: "%s | SOSASA Logistics Services Ltd",
   },
   description:
-    "Fast, reliable, and secure logistics across Nigeria. Same-day delivery, interstate shipping, real-time tracking, and insured packages — powering 2,500+ businesses nationwide.",
+    "SOSASA Logistics Services Ltd is an entirely indigenous Nigerian enterprise delivering environmental logistics, petroleum services, construction, haulage, and agro-allied solutions across Nigeria. RC: 7126319.",
   keywords: [
-    "logistics Nigeria", "same-day delivery Lagos", "interstate shipping Nigeria",
-    "package tracking", "SOSASA", "Abuja logistics", "Port Harcourt delivery",
+    "SOSASA Logistics Services Ltd", "Nigerian logistics company", "environmental logistics Nigeria",
+    "petroleum logistics Nigeria", "oil and gas logistics", "construction logistics Nigeria",
+    "haulage Nigeria", "poultry logistics", "indigenous Nigerian enterprise", "RC 7126319",
   ],
   openGraph: {
-    title: "SOSASA Logistics — Nigeria's #1 Logistics Partner",
-    description: "Speed, reliability, and peace of mind across 36 states.",
+    title: "SOSASA Logistics Services Ltd — Indigenous Nigerian Logistics & Engineering",
+    description: "On line, on time, and on the money. An entirely indigenous Nigerian enterprise serving the oil & gas, construction, environmental, and agro-allied sectors.",
     type: "website",
     locale: "en_NG",
   },

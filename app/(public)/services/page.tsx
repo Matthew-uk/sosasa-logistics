@@ -2,17 +2,18 @@ import type { Metadata } from "next";
 import ServicesClient from "./ServicesClient";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Our Services",
   description:
-    "Same-day express delivery, interstate logistics, business solutions, and insured shipping. SOSASA delivers across Nigeria with live tracking and guaranteed SLAs.",
+    "SOSASA Logistics Services Ltd provides environmental logistics, petroleum & oil and gas services, construction logistics, poultry & agro-allied logistics, and haulage across Nigeria's onshore and offshore sectors.",
   keywords: [
-    "same-day delivery", "interstate logistics Nigeria", "insured shipping",
-    "business logistics solutions", "Lagos delivery", "Abuja courier",
+    "environmental logistics Nigeria", "petroleum logistics", "oil and gas services Nigeria",
+    "construction logistics", "haulage Nigeria", "poultry logistics", "waste disposal Nigeria",
+    "oil spillage cleanup", "onshore offshore services", "agro-allied logistics",
   ],
   openGraph: {
-    title: "SOSASA Services — Logistics Solutions That Deliver",
+    title: "SOSASA Services — Environmental, Petroleum, Construction & Agro-Allied Logistics",
     description:
-      "From single packages to enterprise contracts. Same-day, interstate, and fully insured.",
+      "From waste disposal and oil spillage cleanup to construction haulage and poultry logistics — SOSASA delivers across every sector.",
   },
 };
 

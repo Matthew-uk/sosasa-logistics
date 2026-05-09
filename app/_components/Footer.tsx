@@ -19,19 +19,22 @@ const COLS: Col[] = [
   {
     t: "Services",
     links: [
-      { label: "Same-Day Express", href: "/services" },
-      { label: "Interstate", href: "/services" },
-      { label: "Business Solutions", href: "/services" },
-      { label: "Insured Shipping", href: "/services" },
+      { label: "Environmental Logistics", href: "/services" },
+      { label: "Petroleum Logistics", href: "/services" },
+      { label: "Construction & Haulage", href: "/services" },
+      { label: "Poultry & Agro-Allied", href: "/services" },
+      { label: "General Contracts", href: "/services" },
+      { label: "Water Production", href: "/services" },
     ],
   },
   {
-    t: "Coverage",
+    t: "Sectors",
     links: [
-      { label: "Lagos" },
-      { label: "Abuja" },
-      { label: "Port Harcourt" },
-      { label: "Nationwide" },
+      { label: "Oil & Gas" },
+      { label: "Construction" },
+      { label: "Environmental" },
+      { label: "Agro-Allied" },
+      { label: "Onshore & Offshore" },
     ],
   },
 ];
@@ -44,8 +47,9 @@ export default function Footer() {
           <div>
             <Logo />
             <p style={{ color: C.gray500, fontSize: 14, lineHeight: 1.75, marginTop: 22, maxWidth: 280 }}>
-              Nigeria's trusted logistics partner. Speed, reliability, and peace of mind across 36 states.
+              An entirely indigenous Nigerian enterprise. On line, on time, and on the money — delivering essential services across Nigeria's oil & gas, construction, environmental, and agro-allied sectors.
             </p>
+            <p style={{ color: C.gray600, fontSize: 12, marginTop: 16 }}>RC: 7126319 &nbsp;|&nbsp; Incorporated under CAMA 2020</p>
           </div>
           {COLS.map((col, i) => (
             <div key={i}>
